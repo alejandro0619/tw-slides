@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function SketchyNavbar() {
   return (
     <motion.nav
-      className="relative mx-auto mt-10 max-w-3xl border border-dashed border-zinc-400 dark:border-zinc-700 p-4 flex justify-between items-center rounded-md w-[70%] h-fit"
+      className="relative mx-auto mt-[10%] max-w-3xl border border-dashed border-zinc-400 dark:border-zinc-700 p-4 flex justify-between items-center rounded-md w-[70%] h-fit"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
@@ -26,15 +26,15 @@ export default function SketchyNavbar() {
         <li className="cursor-pointer">Home</li>
         <li className="cursor-pointer">About</li>
         <li className="cursor-pointer">Contact</li>
-        <SketchCircle className="-top-2 left-1/3 w-[300px]" />
-        <Annotation text="Menú" position="top-10 left-1/3" />
+        <SketchCircle className="top-[-12px] left-[-50px] w-[300px]" />
+        <Annotation text="Menú" position="top-10 left-1/3 font-bold" />
       </ul>
 
       {/* Botón */}
       <button className="relative px-4 py-2 border border-zinc-400 dark:border-zinc-700 rounded-md text-gray-900 dark:text-gray-100">
         Sign In
-        <SketchCircle className="-top-2 right-0" />
-        <Annotation text="Botón" position="top-10 right-0" />
+        <SketchCircle className="-top-2 right-[-12px] w-[110px] h-[60px]" />
+        <Annotation text="Botón" position="top-12 right-0 font-bold" />
       </button>
     </motion.nav>
   );
